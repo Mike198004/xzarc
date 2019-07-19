@@ -1,2 +1,4 @@
-# xzarc archiver
-# (C) 2019
+#
+# xzarc archiver (liblzma)
+# 2019
+#
