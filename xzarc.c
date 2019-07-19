@@ -2,6 +2,7 @@
  * 
  * File: xzarc.c
  * Desc: .xz compressor/decompressor
+ * Author: Mike Soshnikov (C) 2019
  *
  */
 #include <errno.h>
