@@ -1,3 +1,3 @@
 #
-# xzarc archiver (liblzma)
+# xzarc archiver (based on liblzma)
 #

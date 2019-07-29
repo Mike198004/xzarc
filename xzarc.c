@@ -2,7 +2,7 @@
  * 
  * File: xzarc.c
  * Desc: .xz compressor/decompressor
- * Author: Mike Soshnikov (C) 2019
+ * Author: Genie (C) 2019
  *
  */
 #include <errno.h>
@@ -231,7 +231,7 @@ int lzma_decompress_file(char *in_fname, char *out_fname)
 	percent = 100-(((float)infile_size/outfile_size)*100);
 	printf("Output file %s, size %lld bytes, decompression ratio +%d%%\n",
 	    out_fname, (long long)info->st_size, percent);
-	printf("Owner uid = %d, gid = %d, mode = %x\n", info->st_uid, info->st_gid, info->st_mode);
+	printf("owner uid = %d, gid = %d, mode = %x\n", info->st_uid, info->st_gid, info->st_mode);
 	if (remove_in) {
 	    printf("Input file %s removed.\n", in_fname);
 	    unlink(in_fname);

@@ -1,5 +1,5 @@
 #
-# Author: Mike Soshnikov Copyright(C) 2019
+# Author: Genie (C) 2019
 #
 # This file has been put into the public domain.
 # You can do whatever you want with this file.
