@@ -8,6 +8,7 @@
 #include <fcntl.h>
 #include <lzma.h>
 
+#define XZARC_VER "0.7"
 #define COMPRESSION_LEVEL	5
 #define COMPRESSION_EXTREME	false
 #define INTEGRITY_CHECK		LZMA_CHECK_CRC64

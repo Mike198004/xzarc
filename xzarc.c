@@ -248,6 +248,11 @@ static void usage(void)
 	prog_name);
 }
 
+static void version()
+{
+    printf("XZarc ver. %s Genie (C) 2019\n", XZARC_VER);
+}
+
 static void help(void)
 {
     usage();
@@ -256,7 +261,8 @@ static void help(void)
 	"-d : Decompression mode;\n" \
 	"-l<level> : (0..9) compression mode level;\n" \
 	"-r : remove input file;\n" \
-	"-h : this help;\n");
+	"-h : this help;\n" \
+	"-v : print version;\n");
     exit(1);
 }
 
@@ -284,7 +290,7 @@ int main(int argc, char **argv, char **env)
 	return 1;
     }
     
-    opt = getopt(argc, argv, "cdl:rh");
+    opt = getopt(argc, argv, "cdl:rhv");
     while(opt != -1) {
 	switch(opt) {
 	    case 'c':
@@ -309,10 +315,13 @@ int main(int argc, char **argv, char **env)
 	    case 'h':
 		help();
 		break;
+	    case 'v':
+		version();
+		break;
 	    default:
 		break;
 	};
-	opt = getopt(argc, argv, "cdl:rh");
+	opt = getopt(argc, argv, "cdl:rhv");
     };
     /* storing opts */
     in_files = argv + optind;
