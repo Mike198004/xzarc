@@ -251,6 +251,7 @@ static void usage(void)
 static void version()
 {
     printf("XZarc ver. %s Genie (C) 2019\n", XZARC_VER);
+    exit(0);
 }
 
 static void help(void)
