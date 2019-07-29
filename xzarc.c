@@ -244,7 +244,7 @@ int lzma_decompress_file(char *in_fname, char *out_fname)
 
 static void usage(void)
 {
-    printf("Usage: %s [-cdrl(0..9)h] <in_file>\n",
+    printf("Usage: %s [-cdrl(0..9)hv] <file> <file...>\n",
 	prog_name);
 }
 
@@ -260,11 +260,11 @@ static void help(void)
     printf("Help:\n" \
 	"-c : Compression mode;\n" \
 	"-d : Decompression mode;\n" \
-	"-l<level> : (0..9) compression level (from 5 level with EXTREME);\n" \
+	"-l<level> : (0..9) compression level (from 5 with EXTREME mode enabled);\n" \
 	"-r : remove input file;\n" \
 	"-h : this help;\n" \
 	"-v : print version;\n");
-    exit(1);
+    exit(0);
 }
 
 
