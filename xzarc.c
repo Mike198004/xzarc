@@ -260,7 +260,7 @@ static void help(void)
     printf("Help:\n" \
 	"-c : Compression mode;\n" \
 	"-d : Decompression mode;\n" \
-	"-l<level> : (0..9) compression mode level;\n" \
+	"-l<level> : (0..9) compression level (from 5 level with EXTREME);\n" \
 	"-r : remove input file;\n" \
 	"-h : this help;\n" \
 	"-v : print version;\n");
