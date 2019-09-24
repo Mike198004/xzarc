@@ -244,7 +244,7 @@ int lzma_decompress_file(char *in_fname, char *out_fname)
 
 static void usage(void)
 {
-    printf("Usage: %s [-cdrl(0..9)hv] <file> <file...>\n",
+    printf("Usage: %s [-cdrl(0..9)hv] <file> <file1...>\n",
 	prog_name);
 }
 
