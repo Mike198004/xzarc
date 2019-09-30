@@ -7,7 +7,12 @@
  */
 #include <errno.h>
 #include <string.h>
+#if __FreeBSD__ 
+    #include <sys/stat.h>
+    #include <sys/types.h>
+#endif
 #include <unistd.h>
+
 #include "xzarc.h"
 
 #define XZARC_OK		0

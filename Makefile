@@ -5,8 +5,8 @@
 # You can do whatever you want with this file.
 #
 
-CC = cc
-CFLAGS = -O2
+CC = gcc
+CFLAGS = -O2 -g
 LDFLAGS = -llzma -larchive
 
 PROGS = \
